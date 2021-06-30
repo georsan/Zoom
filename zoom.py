@@ -25,7 +25,6 @@ def unir(clave):
             pyautogui.typewrite(clave)
             pyautogui.click(pyautogui.locateOnScreen('./img/join.png'))
             print('Clave')
-            
             break
 
 
