@@ -1,0 +1,72 @@
+{
+    "Tuesday": [
+            {
+          "Hora" :"08:00",
+          "Link":"https://renata.zoom.us/j/97048738440#success",
+           "Contraseña":"069221"
+        },
+        {
+            "Hora" :"10:00",
+            "Link":"https://renata.zoom.us/j/91187763476#success",
+             "Contraseña":"171806"
+          },
+          {
+            "Hora" :"12:00",
+            "Link":"https://renata.zoom.us/j/96779931480#success",
+             "Contraseña":"644970"
+          },
+          {
+            "Hora" :"14:00",
+            "Link":"https://renata.zoom.us/j/94760158203#success",
+             "Contraseña":"140731"
+          },
+          {
+            "Hora" :"16:00",
+            "Link":"https://renata.zoom.us/j/94642010910#success",
+             "Contraseña":"835549"
+          }
+        ]
+    ,
+    "Wednesday": [
+            {
+            "Hora" :"10:00",
+            "Link":"https://renata.zoom.us/j/96333876130#success",
+             "Contraseña":"097061"
+          },
+          {
+            "Hora" :"12:00",
+            "Link":"https://renata.zoom.us/j/99441706688#success",
+             "Contraseña":"528278"
+          }
+        ],
+    "Thursday": [
+            {
+          "Hora" :"07:00",
+          "Link":"https://renata.zoom.us/j/94333000043#success",
+           "Contraseña":"055755"
+        },
+        {
+            "Hora" :"10:00",
+            "Link":"https://renata.zoom.us/j/96801486357#success",
+             "Contraseña":"209282"
+          },
+          {
+            "Hora" :"14:00",
+            "Link":"https://renata.zoom.us/j/98761023239#success",
+             "Contraseña":"105911"
+          },
+          {
+            "Hora" :"16:00",
+            "Link":"https://renata.zoom.us/j/99083668924#success",
+             "Contraseña":"409800"
+          }
+        ],
+    "Friday": [
+            {
+            "Hora" :"08:00",
+            "Link":"https://renata.zoom.us/j/96757671918#success",
+             "Contraseña":"062805"
+          }
+        ]
+    }
+  

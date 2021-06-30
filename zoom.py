@@ -2,9 +2,8 @@ import pyautogui
 import datetime
 import time
 import webbrowser
-def iniciar():
-    webbrowser.open('https://renata.zoom.us/j/97048738440#success',new=1,autoraise=True)   
-    clave="123456"    
+def iniciar(url,clave):
+    webbrowser.open(url,new=1,autoraise=True)       
     while True:
         reunion=pyautogui.locateOnScreen('./img/reunion.png')
         if reunion is None:            
