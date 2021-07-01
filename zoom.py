@@ -1,7 +1,12 @@
 import pyautogui 
 import datetime
-import time
 import webbrowser
+import json
+from datetime import datetime
+import time
+import calendar
+
+
 def iniciar(url,clave):
     webbrowser.open(url,new=1,autoraise=True)       
     while True:
@@ -26,6 +31,20 @@ def unir(clave):
             print('Clave')
             break
 
+hora=datetime.now()
+hoy=datetime.today().strftime('%A')
+horario=json.loads(open("horario.json","r").read())
+for dia in  horario[hoy]:    
+    if hora.strftime('%H')==dia:
+        Data=horario[hoy][dia]
+        Link=Data[0]["Link"]
+        Contraseña=Data[0]["Contraseña"]
+        iniciar(Link,Contraseña)
+        time.sleep(7200)
 
+    else:
+        print("no")
+        print()
 
-iniciar()
+    #Link=dia["Link"]
+    #clave=dia["Contraseña"]       
