@@ -34,7 +34,7 @@ hora=datetime.now().time()
 hoy=datetime.today().strftime('%A')
 horario=json.loads(open("horario.json","r").read())
 for dia in  horario[hoy]:    
-    if hora.strftime('%H')=="09":
+    if hora.strftime('%H')==dia:
         Data=horario[hoy][dia]
         Link=Data[0]["Link"]
         Contraseña=Data[0]["Contraseña"]
