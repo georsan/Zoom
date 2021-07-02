@@ -4,7 +4,6 @@ import webbrowser
 import json
 from datetime import datetime
 import time
-import calendar
 
 
 def iniciar(url,clave):
@@ -31,11 +30,11 @@ def unir(clave):
             print('Clave')
             break
 
-hora=datetime.now()
+hora=datetime.now().time()
 hoy=datetime.today().strftime('%A')
 horario=json.loads(open("horario.json","r").read())
 for dia in  horario[hoy]:    
-    if hora.strftime('%H')==dia:
+    if hora.strftime('%H')=="09":
         Data=horario[hoy][dia]
         Link=Data[0]["Link"]
         Contraseña=Data[0]["Contraseña"]
@@ -44,7 +43,10 @@ for dia in  horario[hoy]:
 
     else:
         print("no")
-        print()
-
+        proximo=int(dia)*60-((hora.hour*60+hora.minute)*60+hora.second)
+        if proximo>=0:
+            time.sleep(proximo)
+        else:
+            break
     #Link=dia["Link"]
     #clave=dia["Contraseña"]       
